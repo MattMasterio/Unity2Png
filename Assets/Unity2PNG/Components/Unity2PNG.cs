@@ -64,7 +64,7 @@ namespace Unity2Png
         public bool convertLinearToGamma = true;
 
 		// debug frames
-		public bool debug = false;
+		public bool debug = false;							// prints transition frame alphas
 
 		// default
 		private string _fullPath = "";                      // folder path
@@ -93,7 +93,6 @@ namespace Unity2Png
 
         private CaptureStage _stage = CaptureStage.NotStarted;
         private static bool _started = false;               // used to stop other instances
-
 		private DateTime _startTime;
 
 		public enum CaptureBackground
