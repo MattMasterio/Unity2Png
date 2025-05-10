@@ -1,0 +1,7 @@
+
+'U2P_PostProcessRenderer_with_SpriteUnlitDefault_shader.mat'
+
+	1. This material is used only when 'PostProcess.OnInputTexture' or 'PostProcess.OnOutputTexture' is selected.
+	2. Material is attached in re-capture phase to re-capture old frames with post-effects on 
+		(e.g. you can loop input frames before applying any post-process, next you apply post-process (Bloom, HDR) on looped input to eliminate glow effect in final frames).
+	3. You can apply any shader to this material but it is not recomended.

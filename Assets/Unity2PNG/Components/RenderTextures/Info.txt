@@ -1,0 +1,24 @@
+
+Rendered Textures in this folder are used as 'settings containers' and are not used by any camera.
+Properties are copied to create temporary textures with the same format.
+
+# Linear / Gamma color formats:
+	If you are using 'Linear' color space in the project then you should use 'U2P_Linear_...' file in Unity2PNG.
+	If you are using 'Gamma' color space in the project then you should use 'U2P_Gamma_...' file in Unity2PNG.
+
+# File name patterns (you can name it as you wish, naming like this helps switch between presets or use another preset for each Unity2PNG instance):
+	
+	'U2P_' + <ColorSpace> + '_' + <ColorFormat> + '_' + <Size>'
+
+	Example: 
+		'U2P_Gamma_R32G32B32A32_SFLOAT_512x512'	(captures HDR)
+		'U2P_Gamma_R8G8B8A8_UNORM_512x512'	(NOT captures HDR)
+		'U2P_Linear_R8G8B8A8_SRGB_512x512'
+
+# HDR
+	To capture HDR you should check a ColorFormat property in RenderedTexture component.
+	For example: If your project uses 'Gamma' color space then you should use a 'U2P_Gamma_R32G32B32A32_SFLOAT_...'.
+	ColorFormat 'R32G32B32A32_SFLOAT' can handle HDR in this scenario.
+
+	It depends from system you work on and is hard to tell which option is the best for your project.
+	To find the best solution just capture HDR object in all 'ColorFormats' (ColorFormat can be changed at RendererTexture settings).
