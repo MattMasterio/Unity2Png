@@ -54,17 +54,17 @@ namespace Unity2Png
         public bool overrideFolderContent = true;
         public bool showInFileExplorer = true;
         // player
-        public bool captureAutoStart = true;               // other wise button or mouse click required
+        public bool captureAutoStart = true;				// other wise button or mouse click required
         public float captureDelay = 1f;
         // alpha cut off adjustment
         public bool alphaSmooth = true;
-        public float alphaSmoothLimit = 0.2f;
+        public float alphaSmoothLimit = 0.2f;				
         public float alphaSmoothDamp = 0.4f;
         // color psace conversion
         public bool convertLinearToGamma = true;
 
 		// debug frames
-		public bool debug = false;							// prints transition frame alphas
+		public bool debug = false;							// shows transition frame alpha ratios
 
 		// default
 		private string _fullPath = "";                      // folder path
