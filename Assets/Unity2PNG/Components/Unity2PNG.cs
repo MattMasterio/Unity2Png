@@ -54,7 +54,7 @@ namespace Unity2Png
         public bool overrideFolderContent = true;
         public bool showInFileExplorer = true;
         // player
-        public bool captureAutoStart = true;				// other wise button or mouse click required
+        public bool captureAutoStart = true;				// otherwise button or mouse click required
         public float captureDelay = 1f;
         // alpha cut off adjustment
         public bool alphaSmooth = true;
@@ -86,7 +86,7 @@ namespace Unity2Png
         private int _outputFrames = 0;
         private Texture2D[] _array_a;                       // first half of input frames (transition_a inlcuded)
         private Texture2D[] _array_b;                       // second half of input frames (transition_b inlcuded)
-		private Texture2D[] _final_array;
+		private Texture2D[] _final_array;					// frame arrays a and b joined and ready to final calculations
 
 		// output frames
 		private Texture2D[] _output;                        // frames ready to save as png
