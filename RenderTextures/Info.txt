@@ -1,0 +1,19 @@
+Render Textures in this folder are used as 'settings containers' and are not rendered to directly by any camera.
+Their properties (anti-aliasing, filter mode, depth, and format) are copied to create temporary internal buffers during capture.
+
+# Required Color Format (32-bit Float HDR)
+	Unity2PNG's multithreaded Job System processes raw pixel data using 128-bit floating-point Color structs (16 bytes per pixel).
+	Therefore, the Render Texture Color Format MUST always be set to:
+		R32G32B32A32_SFLOAT (ARGBFloat)
+
+	Using 8-bit or 16-bit formats (such as R8G8B8A8_UNORM, R8G8B8A8_SRGB, or R16G16B16A16_SFLOAT) is not supported and will cause pixel glitches.
+
+# Linear / Gamma Color Space Handling
+	Because R32G32B32A32_SFLOAT stores raw linear floating-point values without hardware sRGB curves, a single Render Texture asset works in BOTH Color Spaces:
+	• Gamma Color Space: Captures and exports values directly as-is.
+	• Linear Color Space: Enable the 'Convert Linear To Gamma' option in the Unity2PNG inspector to automatically convert the final output before saving PNGs.
+
+# Resolution Override
+	You do not need to create separate Render Texture assets for different resolutions.
+	Use the 'Resolution Override' dropdown in the Unity2PNG component to override dimensions per object (256x256, 512x512, 1024x1024, 2048x2048), or select 'CopyFromRenderTexture' to use custom dimensions defined on the asset.
+

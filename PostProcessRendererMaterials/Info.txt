@@ -1,0 +1,9 @@
+'U2P_PostProcessRenderer.mat'
+
+	1. This material is used only when 'PostProcess.OnOutputTexture' is selected.
+	2. It is assigned to the Post Process Renderer during the re-capture pass to re-render the blended frames 
+		with post-processing effects enabled (for example, allowing you to create a seamless loop first and then apply 
+		Bloom or Color Grading afterward without causing transition glow artifacts).
+	3. Default shader: 'Universal Render Pipeline/2D/Sprite-Unlit-Default' (found in the Shader dropdown under 
+		Universal Render Pipeline > 2D > Sprite-Unlit-Default). You can assign a different shader to this material, 
+		though doing so is not recommended.
