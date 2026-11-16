@@ -1,3 +1,4 @@
+YOUTUBE & DOWNLOADS: https://youtu.be/j4Z2xsvX4vw
 
 Unity 2 PNG 
     Author: Matthew Mazan (Masterio)
@@ -12,7 +13,7 @@ Patch notes:
 	+ Added full support for the new Unity Input System (alongside the Legacy Input Manager).
 	+ Added an interactive Animation Preview Player directly inside the Inspector and as a dockable Pop-Out window (with Zoom, Pan, FPS control, Play/Pause, Auto-Play, background switcher, and an Alpha=0 debug highlighter).
 	+ Added Resolution Override presets (256x256, 512x512, 1024x1024, 2048x2048) without modifying the source RenderTexture asset.
-	+ Added fractional Duration support (0.1s–10.0s) and increased the maximum transition frames limit to 60.
+	+ Added fractional Duration support (0.1sâ€“10.0s) and increased the maximum transition frames limit to 60.
 	+ Added real-time RAM usage estimation and an automatic Out-Of-Memory safety guard.
 	+ Added Quadratic Alpha Smooth to cleanly fade out faint outer glow fringes.
 	+ Added Multi-Object Editing support in the Inspector and collapsible UI sections (FILES & OUTPUT, PREVIEW).
